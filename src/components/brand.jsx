@@ -6,8 +6,8 @@ import vodafone from "../assets/brand/vodafone.png"
 import intel from "../assets/brand/intel.png"
 function brand() {
   return (
-    <div className='container my-10 '>
-        <div className="flex gap-44 brand mt-25 ml-20">
+    <div className='container my-15 '>
+        <div className="flex gap-44 justify-between brand my-30">
             <div className="img">
                 <img src={vodafone} alt="" />
             </div>

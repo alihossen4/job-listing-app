@@ -56,3 +56,9 @@
     0% 50px
   );
 }
+.dashboard-btn{
+  background: #fff;
+  color: #4640de;
+  margin: 15px 0;
+  font-weight: 600;
+}
