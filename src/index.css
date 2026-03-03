@@ -1,6 +1,6 @@
 @import "tailwindcss";
 .container{
-  max-width: 1560px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 *{
@@ -48,12 +48,12 @@
  
    width: 100%;
    clip-path: polygon(
-    50px 0%,        /* top-left cut */
+    60px 0%,        /* top-left cut */
     100% 0%, 
-    100% calc(100% - 20px), 
-    calc(100% - 50px) 100%,  /* bottom-right cut */
+    100% calc(100% - 60px), 
+    calc(100% - 60px) 100%,  /* bottom-right cut */
     0% 100%, 
-    0% 50px
+    0% 60px
   );
 }
 .dashboard-btn{
