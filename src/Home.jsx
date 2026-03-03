@@ -5,12 +5,15 @@ import Brand from "./components/brand"
 import Category from "./components/Category"
 function Home() {
   return (
-    <div className="container">
+    <>
+    
         <Navbar />
+    <div className="container">
         <Header />
         <Brand />
         <Category />
     </div>
+    </>
   )
 }
 

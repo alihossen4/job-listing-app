@@ -12,7 +12,7 @@ function Navbar() {
         return ()=> window.removeEventListener('scroll', handleScroll)
     }, [])
   return (
-    <header className={`sticky top-0 z-50 ${isScroll? "bg-[#f5f5e8] w-full":""}`}>
+    <header className={`sticky top-0 z-50 ${isScroll? "w-full bg-[#f5f5e8] ":""}`}>
         <nav>
             <div className="container sticky ">
                 <div className="flex">
