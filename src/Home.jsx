@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import Brand from "./components/brand"
 import Category from "./components/Category"
 import Dashboard from "./components/Dashboard"
+import FeatureJobs from './components/FeatureJobs'
 function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ function Home() {
         <Brand />
         <Category />
         <Dashboard />
+        <FeatureJobs />
     </div>
     </>
   )
