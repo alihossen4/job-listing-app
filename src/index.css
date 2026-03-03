@@ -1,0 +1,46 @@
+@import "tailwindcss";
+.container{
+  max-width: 1560px;
+  margin: 0 auto;
+}
+*{
+  box-sizing: border-box;
+}
+.btn{
+  padding: 8px 15px;
+  font-size: 20px;
+  background-color: #4640DE;
+  margin: 0 10px;
+  color: #fff;
+}
+.login-btn{
+  background-color: #f0f0f0;
+  color: #4640DE;
+}
+.heading h1{
+  font: medium;
+  font-size: 65px;
+  font-weight: 700;
+}
+.search-btn input{
+  /* border-bottom: 3px solid #f0f0f0 ; */
+  text-decoration: solid;
+}
+.search{
+  font-size: 23px;
+  font-weight: lighter;
+  padding: 0 10px;
+}
+.brand.img{
+  font-size: 40px;
+  height: 40px;
+  margin-top: 20px;
+}
+.cart{
+  padding: 32px;
+  border: 1px solid gray;
+}
+.cart:hover{
+  background: #4640de;
+  color: #fff;
+}
