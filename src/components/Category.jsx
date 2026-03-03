@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaArrowRight } from 'react-icons/fa';
 const Cart = ({title, desc}) =>{
     return(
         <>
@@ -15,7 +16,12 @@ const Cart = ({title, desc}) =>{
 function Category() {
   return (
     <div className='container mx-auto'>
-        <h1 className='text-[45px] my-8 font-[700]'>Explore By <span className='text-[#32a5f8]'>Category</span> </h1>
+        <div className="heading my-6 mt-10 flex justify-between text-xl ">
+                
+                            <h1>Explore By <span className='text-[#32a5f8]'>Category</span></h1>
+                            <button className='text-blue-500'>Show All Jobs <FaArrowRight className='inline'/></button>
+                    </div>
+        {/* <h1 className='text-[45px] my-8 font-[700]'>Explore By <span className='text-[#32a5f8]'>Category</span> </h1> */}
         <div className="flex mb-8 mt-15 justify-between grid grid-cols-4 gap-8">
             <Cart title={"Design"} desc={" 235 jobs available"}/>
             <Cart title={"Sales"} desc={" 756 jobs available"}/>

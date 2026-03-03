@@ -62,3 +62,11 @@
   margin: 15px 0;
   font-weight: 600;
 }
+.location-title li{
+  list-style-type: disc;
+}
+.location-title li::marker{
+  color: rgb(206, 202, 202);
+  font-size: 16px;
+  
+}

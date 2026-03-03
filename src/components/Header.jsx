@@ -15,6 +15,7 @@ function Header() {
                         <input type="text" className='p-3 w-[30%] pt-4 ml-15 border-b border-gray-400 outline-none focus:border-blue-500' placeholder='Job title or Keyword'/>
                         <div className="search absolute top-5 my-auto ml-5 ">
                             <IoSearch  />
+                            
                         </div>
                         <div className="loc mt-4 text-[20px] ml-5 mr-2">
                             <FaMapMarkerAlt />
