@@ -6,5 +6,6 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  proxy:"http://localhost:3000"
 })
 

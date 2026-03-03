@@ -44,8 +44,11 @@
   background: #4640de;
   color: #fff;
 }
+.cart:hover img{
+  background: #ffffff;
+  /* color: #ffffff; */
+}
 .dashboard{
- 
    width: 100%;
    clip-path: polygon(
     60px 0%,        /* top-left cut */
