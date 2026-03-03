@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Header from "./components/Header"
 import Brand from "./components/brand"
 import Category from "./components/Category"
+import Dashboard from "./components/Dashboard"
 function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ function Home() {
         <Header />
         <Brand />
         <Category />
+        <Dashboard />
     </div>
     </>
   )
