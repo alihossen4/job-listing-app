@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import logo from "../assets/Logo.png"
+import { FaBars } from 'react-icons/fa';
 function Navbar() {
     const [isScroll, setScroll] = useState(false);
     const handleScroll= ()=>{

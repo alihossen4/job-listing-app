@@ -44,6 +44,10 @@
   background: #4640de;
   color: #fff;
 }
+.cart:active{
+  background: #4640de;
+  color: #fff;
+}
 .cart:hover img{
   background: #ffffff;
   /* color: #ffffff; */

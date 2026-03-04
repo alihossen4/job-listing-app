@@ -10,20 +10,20 @@ import LatestJobs from './components/LatestJobs'
 
 
 function Home() {
-  const [jobs, setJobs] = useState([]);
-  useEffect(()=>{
+//   const [jobs, setJobs] = useState([]);
+//   useEffect(()=>{
 
-    const getJobData = async()=>{
-    try {
-      const response= await fetch("http://localhost:3000/jobs");
-      const data = await response.json();
-      setJobs(data);
-    } catch (error) {
-      throw new Error(error.message)
-    }
-}
-  getJobData();
-  },[])
+//     const getJobData = async()=>{
+//     try {
+//       const response= await fetch("http://localhost:3000/jobs");
+//       const data = await response.json();
+//       setJobs(data);
+//     } catch (error) {
+//       throw new Error(error.message)
+//     }
+// }
+//   getJobData();
+//   },[])
   return (
     <>
     
@@ -32,8 +32,7 @@ function Home() {
         <Header />
         <Brand />
         <Category />
-        <Dashboard />
-        <FeatureJobs />
+        {/* <FeatureJobs /> */}
         <LatestJobs />
     </div>
    
