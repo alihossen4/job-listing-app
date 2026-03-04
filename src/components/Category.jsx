@@ -53,7 +53,7 @@ const arr= [
 const Cart = ({src, title, desc, jobcount, className, onClick}) =>{
     return(
         <>
-        <div className={`cart  w-75 h-60 p-30 sm:w-120 sm:h-20 ${className}`} onClick={onClick} >
+        <div className={`cart  w-75 h-60   ${className}`} onClick={onClick} >
             <img src={src} alt="icon" />
 
             <h1 className='text-[25px]'>{title}</h1>
