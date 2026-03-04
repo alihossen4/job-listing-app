@@ -53,8 +53,7 @@ const arr= [
 const Cart = ({src, title, desc, jobcount, className, onClick}) =>{
     return(
         <>
-        
-        <div className={`cart  w-75 h-60 p-30 ${className}`} onClick={onClick} >
+        <div className={`cart  w-75 h-60 p-30 sm:w-120 sm:h-20 ${className}`} onClick={onClick} >
             <img src={src} alt="icon" />
 
             <h1 className='text-[25px]'>{title}</h1>
@@ -113,7 +112,7 @@ fetchFilterData();
                             <button className='text-blue-500'>Show All Jobs <FaArrowRight className='inline'/></button>
             </div>
         {/* <h1 className='text-[45px] my-8 font-[700]'>Explore By <span className='text-[#32a5f8]'>Category</span> </h1> */}
-        <div className="flex mb-8 mt-15 justify-between grid grid-cols-4 gap-8">
+        <div className="flex mb-8 mt-15 justify-between grid sm:grid-cols-1  gap-8 2xl:grid-cols-4">
             <Cart src={crossicon} title={"UI/UX Designer"} jobcount={`${jobs
             .filter((job)=> job.title ==="UI/UX Designer").length }`} desc={" jobs available"}  onClick={()=>setSelectedTitle("UI/UX Designer")}/>
 
@@ -148,7 +147,8 @@ fetchFilterData();
             </div>
         <div className="grid grid-cols-4 gap-4">
         {
-           arr.map((list)=>(
+            (jobs )?(
+            arr.map((list)=>(
             (list.name  === selectedTitle ) &&(
                 titleJobs.filter((jobs)=> jobs.title === selectedTitle)
                 .map(jobs=>{
@@ -174,7 +174,10 @@ fetchFilterData();
                 
             )
            ))
-        }
+        ):(
+           <h1 className='text-3xl'>Backend required to get data</h1>
+        )     
+}
         </div>
     </div>
   )

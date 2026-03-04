@@ -3,6 +3,7 @@ import logo from "../assets/Logo.png"
 import { FaBars } from 'react-icons/fa';
 function Navbar() {
     const [isScroll, setScroll] = useState(false);
+    
     const handleScroll= ()=>{
         const scroll = window.scrollY;
         setScroll(scroll>50);
@@ -13,7 +14,7 @@ function Navbar() {
         return ()=> window.removeEventListener('scroll', handleScroll)
     }, [])
   return (
-    <header className={`sticky top-0 z-50 ${isScroll? "w-full bg-[#f5f5e8] ":""}`}>
+    <header className={`sticky top-0 z-50 ${isScroll? "w-full bg-[#f5f5e8] ":"" }`}>
         <nav>
             <div className="container sticky ">
                 <div className="flex">
