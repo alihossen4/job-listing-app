@@ -25,7 +25,7 @@ function Header() {
                                 </select>
                             </div>
                 
-                        <button className='btn float-right py-3 text-center px-2 w-[30%]'>Search My Job</button>
+                        <button className='btn float-right py-3 text-center px-2 2xl:w-[30%]'>Search My Job</button>
                     </div>
                 </div>
                 <div className="right mt-2 ">
