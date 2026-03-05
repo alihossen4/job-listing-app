@@ -11,7 +11,7 @@ import { FaArrowRight } from 'react-icons/fa';
 const Cart =({logo,title, heading}) =>{
     return(
         <>
-        <div className="feature feature-cart w-78 h-60 border border-gray-200 p-2">
+        <div className="feature feature-cart 2xl:w-78 2xl:h-60 border border-gray-200 p-2">
             <div className="logo flex justify-between m-3">
                 <img src={logo} alt="logos" className='rounded-full'/>
                 <button className='border-2 border-blue-500 p-1 text-purple-500'>Full Time</button>
@@ -21,7 +21,6 @@ const Cart =({logo,title, heading}) =>{
                 <p>{heading}</p>
             </div>
             <div className="desc">
-
             
             </div>
         </div>
