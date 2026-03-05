@@ -11,12 +11,12 @@ import { FaArrowRight } from 'react-icons/fa';
 const Cart =({logo,title, heading}) =>{
     return(
         <>
-        <div className="feature-cart w-78 h-60 border border-gray-200">
+        <div className="feature feature-cart w-78 h-60 border border-gray-200 p-2">
             <div className="logo flex justify-between m-3">
                 <img src={logo} alt="logos" className='rounded-full'/>
                 <button className='border-2 border-blue-500 p-1 text-purple-500'>Full Time</button>
             </div>
-            <div className="feature-h1">
+            <div className="feature-h1 p-4">
                 <h1>{title}</h1>
                 <p>{heading}</p>
             </div>
@@ -32,12 +32,12 @@ function FeatureJobs() {
   return (
     <div className='container'>
 
-            <div className="heading my-6 mt-10 flex justify-between text-xl ">
+            <div className="heading flex justify-between my-10">
 
-            <h1>Featured <span className='text-[#32a5f8]'>Jobs</span></h1>
-                <button className='text-blue-500'>Show All Jobs <FaArrowRight className='inline'/></button>
+            <h1 className='text-[65px] font-[600]'>Featured <span className='text-[#32a5f8]'>Jobs</span></h1>
+                <button className='text-blue-500 text-2xl'>Show All Jobs <FaArrowRight className='inline'/></button>
             </div>
-        <div className=" grid grid-cols-4 gap-8 mt-6 mx-auto justify-between ">
+        <div className=" grid grid-cols-4 gap-8 mt-6 mx-auto justify-between feature_cart_container">
             <Cart logo={r} title={"Email Marketing"} heading={"Revoult . Madrid, Spain"} />
 
             <Cart logo={dropbox}  title={"Brand Desinger"} heading={"Dropbox . Sanfransisco, USA"}/>

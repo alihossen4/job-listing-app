@@ -19,27 +19,8 @@ import r from "../assets/feature/r.png"
 import ring from "../assets/feature/ring.png"
 import twitter from "../assets/feature/twitter.png"
 import camera from "../assets/feature/camera.png"
-// import { FaArrowRight } from 'react-icons/fa';
-const Carts =({logo,title, heading}) =>{
-    return(
-        <>
-        <div className="feature-cart w-78 h-60 border border-gray-200">
-            <div className="logo flex justify-between m-3">
-                <img src={logo} alt="logos" className='rounded-full'/>
-                <button className='border-2 border-blue-500 p-1 text-purple-500'>Full Time</button>
-            </div>
-            <div className="feature-h1">
-                <h1>{title}</h1>
-                <p>{heading}</p>
-            </div>
-            <div className="desc">
 
-            
-            </div>
-        </div>
-        </>
-    )
-}
+
 const arr= [
     {id:1, name:"UI/UX Designer", logo:canva},
     {id:2, name:"Product Manager", logo:dropbox},
@@ -53,12 +34,15 @@ const arr= [
 const Cart = ({src, title, desc, jobcount, className, onClick}) =>{
     return(
         <>
-        <div className={`cart  w-75 h-60   ${className}`} onClick={onClick} >
-            <img src={src} alt="icon" />
-
-            <h1 className='text-[25px]'>{title}</h1>
-            
-            <p><span>{jobcount}</span>{desc}</p>
+        <div className="Category">
+            <div className={`category-cart  w-75 h-60    ${className}`} onClick={onClick} >
+                
+                    <img src={src} alt="icon"  />
+                
+                <h1 className='text-[25px] inline-block'>{title}</h1>
+                
+                <p><span>{jobcount}</span>{desc}</p>
+            </div>
         </div>
         </>
     )
@@ -67,14 +51,9 @@ const Cart = ({src, title, desc, jobcount, className, onClick}) =>{
 function Category() {
 const[ jobs, setJobs] = useState([]);
 const [titleJobs, setTitleJobs] = useState([]);
-// const [color, setColor] = useState(false);
+
 const [selectedTitle, setSelectedTitle] = useState("UI/UX Designer")
-// const [count,setCount] = useState("");
 
-
-// const clickHandle = () =>{
-//     setColor(!color)
-// }
 useEffect(()=>{
     const fetchJobs = async() =>{
     try {
@@ -86,15 +65,11 @@ useEffect(()=>{
     }
 }
  const fetchFilterData = async() =>{
-        // setColor(!color);
-        // setColor(!color)
-        // setTitleJobs(titleJobs.filter((jobs)=>jobs.title=""))
-    
         try {
             const response = await fetch('http://localhost:3000/filter');
             const data = await response.json();
             setTitleJobs(data);
-            // return data;
+            
         } catch (error) {
             throw new Error({error: error.mesage})
         }
@@ -106,10 +81,10 @@ fetchFilterData();
 
   return (
     <div className='container mx-auto'>
-        <div className="heading my-6 mt-10 flex justify-between text-xl ">
+        <div className="heading my-6 mt-10 flex justify-between">
                 
-                            <h1>Explore By <span className='text-[#32a5f8]'>Category</span></h1>
-                            <button className='text-blue-500'>Show All Jobs <FaArrowRight className='inline'/></button>
+                <h1 className='text-[65px] font-[600]'>Explore By <span className='text-[#32a5f8]'>Category</span></h1>
+                <button className='text-blue-500 text-2xl'>Show All Jobs <FaArrowRight className='inline'/></button>
             </div>
         {/* <h1 className='text-[45px] my-8 font-[700]'>Explore By <span className='text-[#32a5f8]'>Category</span> </h1> */}
         <div className="flex mb-8 mt-15 justify-between grid sm:grid-cols-1  gap-8 2xl:grid-cols-4">
@@ -140,11 +115,11 @@ fetchFilterData();
             
         </div>
         <Dashboard />
-            <div className="heading my-15 flex justify-between text-xl ">
+            {/* <div className="heading my-15 flex justify-between text-xl ">
             
                         <h1>Featured <span className='text-[#32a5f8]'>Jobs</span></h1>
                         <button className='text-blue-500'>Show All Jobs <FaArrowRight className='inline'/></button>
-            </div>
+            </div> */}
         <div className="grid grid-cols-4 gap-4">
         {
             (jobs )?(

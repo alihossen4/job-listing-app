@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 .btn{
-  padding: 8px 15px;
+  padding: 8px 12px;
   font-size: 20px;
   background-color: #4640DE;
   margin: 0 10px;
@@ -17,11 +17,11 @@
   background-color: #f0f0f0;
   color: #4640DE;
 }
-.heading h1{
+/* .heading h1{
   font: medium;
   font-size: 65px;
   font-weight: 700;
-}
+} */
 .search-btn input{
   /* border-bottom: 3px solid #f0f0f0 ; */
   text-decoration: solid;
@@ -36,19 +36,18 @@
   height: 40px;
   margin-top: 20px;
 }
-.cart{
-  padding: 32px;
+.category-cart{
   border: 1px solid gray;
 }
-.cart:hover{
+.category-cart:hover{
   background: #4640de;
   color: #fff;
 }
-.cart:active{
+.category-cart:active{
   background: #4640de;
   color: #fff;
 }
-.cart:hover img{
+.category-cart:hover img{
   background: #ffffff;
   /* color: #ffffff; */
 }
@@ -76,4 +75,93 @@
   color: rgb(206, 202, 202);
   font-size: 16px;
   
+}
+header .nav-btn{
+  /* padding: px; */
+  /* font-size: 24px; */
+  background: transparent;
+  border: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+@media only screen and (max-width:1024px){
+  header .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+  header nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    transform: translateY(-100vh);
+  } 
+
+  header .responsive_nav {
+    transform: none;
+  }
+  .category-cart{
+    @apply w-[95vw] h-[120px] mx-auto
+  }
+  .search-btn{
+    @apply flex flex-col w-[95vw] gap-2
+  }
+   .container.heading{
+    @apply w-[95vw]
+   }
+  .container .heading h1{
+    @apply text-lg text-[45px] ml-3
+  }
+  .container .heading button{
+    @apply hidden 
+  }
+  .dashboard{
+    @apply flex flex-col w-[95vw] mx-auto my-5 text-center
+  }
+  .dashboard h1{
+    @apply text-[45px] text-center mx-auto
+  }
+  .container .right{
+    @apply p-3 mx-auto -mt-3
+  }
+  .feature.feature-cart{
+    @apply w-[80vw] 
+  }
+  .feature_cart_container{
+    @apply overflow-scroll flex flex-1
+  }
+  .nav-menu{
+    @apply flex flex-col gap-3
+  }
+  .flex .right .header-img{
+    @apply hidden
+  }
+  .Latest{
+    @apply w-[95vw] mx-auto
+  }
+  .latest_container{
+    @apply flex flex-col
+  }
+  .container .left p{
+    @apply w-[90vw]
+  }
+  .container .left .location_container{
+    @apply px-8 flex flex-col relative
+  }
+  /* .search-btn  {
+    @apply ml-2
+  } */
+  .location-icon{
+    @apply absolute top-6 left-1
+  }
+  .location_container select{
+    @apply w-[80vw] mx-3 my-1 p-2
+  }
 }

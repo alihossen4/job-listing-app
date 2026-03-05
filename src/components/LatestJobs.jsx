@@ -8,7 +8,7 @@ import { FaArrowRight } from 'react-icons/fa';
 const LatestCart = ({logo,heading, title, location}) =>{
     return(
         <>
-            <div className="feature ">
+            <div className="Latest ">
                 <div className="cart-container bg-[#f0f0f0] h-35 p-3 pt-3 px-8 pb-5">
 
                 <div className="flex gap-4 my-2">
@@ -39,12 +39,12 @@ const LatestCart = ({logo,heading, title, location}) =>{
 function LatestJobs() {
   return (
     <div className='container'>
-        <div className="heading my-6 mt-10 flex justify-between text-xl ">
+        <div className="heading my-6 mt-10 flex justify-between  ">
         
-                    <h1>Latest <span className='text-[#32a5f8]'>Jobs</span></h1>
-                    <button className='text-blue-500'>Show All Jobs <FaArrowRight className='inline'/></button>
+                    <h1 className='text-[65px] font-[600] '>Latest <span className='text-[#32a5f8]'>Jobs</span></h1>
+                    <button className='text-blue-500 text-2xl'>Show All Jobs <FaArrowRight className='inline'/></button>
             </div>
-        <div className="grid grid-cols-2 gap-5 mt-10">
+        <div className="grid grid-cols-2 gap-5 mt-10 latest_container">
             <LatestCart logo={N} heading={"Social Media Assistan"} title={"Nomad"} location="Paris, France"/>
             <LatestCart logo={dropbox} heading={"Brand Designer"} title={"Dropbox"} location={"San Fransisco, USA"}/>
             <LatestCart logo={dropbox} heading={"Interactive Developer"} title={"Terraform"} location={"Humberg, Germany"}/>
