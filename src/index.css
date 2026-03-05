@@ -84,7 +84,10 @@ header .nav-btn{
   visibility: hidden;
   opacity: 0;
 }
-
+footer .footer-icon{
+  
+  filter: invert(1);
+}
 
 @media only screen and (max-width:1024px){
   header .nav-btn{
@@ -107,11 +110,17 @@ header .nav-btn{
   header .responsive_nav {
     transform: none;
   }
+  .search-btn input{
+    @apply w-[70vw]
+  }
   .category-cart{
     @apply w-[95vw] h-[120px] mx-auto
   }
   .search-btn{
-    @apply flex flex-col w-[95vw] gap-2
+    @apply flex flex-col w-[95vw] gap-2 
+  }
+  .search-btn button{
+    @apply w-[94vw]
   }
    .container.heading{
     @apply w-[95vw]
@@ -162,7 +171,7 @@ header .nav-btn{
     @apply absolute top-6 left-1
   }
   .location_container select{
-    @apply w-[80vw] mx-3 my-1 p-2
+    @apply w-[75vw] mx-3 my-1 p-2
   }
   .brand_container{
     @apply h-50

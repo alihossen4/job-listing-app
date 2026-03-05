@@ -6,6 +6,7 @@ import Category from "./components/Category"
 import Dashboard from "./components/Dashboard"
 import FeatureJobs from './components/FeatureJobs'
 import LatestJobs from './components/LatestJobs'
+import Footer from './components/Footer'
 
 
 
@@ -21,7 +22,8 @@ function Home() {
         <FeatureJobs />
         <LatestJobs />
     </div>
-   
+        <Footer />
+    
     </>
   )
 }
