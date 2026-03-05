@@ -35,7 +35,7 @@ const Cart = ({src, title, desc, jobcount, className, onClick}) =>{
     return(
         <>
         <div className="Category">
-            <div className={`category-cart  w-75 h-60    ${className}`} onClick={onClick} >
+            <div className={`category-cart  w-75 h-60 p-5 ${className}`} onClick={onClick} >
                 
                     <img src={src} alt="icon"  />
                 
