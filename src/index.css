@@ -164,4 +164,10 @@ header .nav-btn{
   .location_container select{
     @apply w-[80vw] mx-3 my-1 p-2
   }
+  .brand_container{
+    @apply h-50
+  }
+  .brand{
+
+  }
 }

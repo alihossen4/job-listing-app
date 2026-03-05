@@ -17,15 +17,15 @@ function Header() {
                             <IoSearch  />
                         </div>
                        
-                            <div className="loc location_container mt-4 text-[20px] ml-5 mr-2">
-                                <FaMapMarkerAlt className="location-icon"/>
-                                <select name="location" id="" className='w-[25%] border-b border-gray-400 mr-10'>
+                            <div className="loc flex location_container mt-4 text-[20px] ml-5 mr-2">
+                                <FaMapMarkerAlt className="location-icon mt-1"/>
+                                <select name="location" id="" className='w-full border-b px-3  border-gray-400 mr-10'>
                                     <option value="italy">Florence, Italy</option>
                                     <option value="canada">Toronto, Canada</option>
                                 </select>
                             </div>
                 
-                        <button className='btn float-right py-3 text-center px-2 w-full'>Search My Job</button>
+                        <button className='btn float-right py-3 text-center px-2 w-[30%]'>Search My Job</button>
                     </div>
                 </div>
                 <div className="right mt-2 ">
