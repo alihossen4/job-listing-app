@@ -222,13 +222,25 @@ footer .second-div{
 
   }
   .second-div ul {
-    @apply flex gap-3
+    @apply flex gap-3 my-4
   }
   .lower {
     @apply flex flex-col w-[70vw] mx-auto
   }
   .footer-button{
-    @apply flex flex-col
+    @apply flex flex-col gap-2
+  }
+  .footer-button input{
+    @apply mx-5
+  }
+  .fourth h1{
+    @apply w-[70vw] mx-5 mt-5
+  }
+  .fourth p{
+    @apply w-[80vw] mx-5
+  }
+  .footer-button button{
+    @apply mx-5 w-full
   }
   .footer_icon {
      @apply w-[100%] flex gap-10 p-3 my-2
