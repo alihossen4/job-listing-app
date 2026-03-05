@@ -19,7 +19,7 @@ function Header() {
                        
                             <div className="loc flex location_container mt-4 text-[20px] ml-5 mr-2">
                                 <FaMapMarkerAlt className="location-icon mt-1"/>
-                                <select name="location" id="" className='w-full border-b px-3  border-gray-400 mr-10'>
+                                <select name="location" id="" className='w-full border-b px-3 h-8 pb-1 -mt-1 border-gray-400 mr-10'>
                                     <option value="italy">Florence, Italy</option>
                                     <option value="canada">Toronto, Canada</option>
                                 </select>
